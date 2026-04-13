@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My YouTube Clone</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            padding-top: 70px;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 56px;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 16px;
+            border-bottom: 1px solid #ddd;
+            z-index: 100;
+        }
+
+        .logo {
+            color: #FF0000;
+            font-size: 22px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .search-box {
+            display: flex;
+            width: 40%;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 20px 0 0 20px;
+            outline: none;
+        }
+
+        .search-box button {
+            padding: 0 15px;
+            border: 1px solid #ccc;
+            border-left: none;
+            border-radius: 0 20px 20px 0;
+            background: #f8f8f8;
+            cursor: pointer;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
+            padding: 20px;
+        }
+
+        .video-card {
+            width: 100%;
+        }
+
+        iframe {
+            width: 100%;
+            aspect-ratio: 16/9;
+            border-radius: 12px;
+            border: none;
+            background: #000;
+        }
+
+        .video-info {
+            display: flex;
+            margin-top: 12px;
+            gap: 12px;
+        }
+
+        .channel-icon {
+            width: 36px;
+            height: 36px;
+            background: #ddd;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .text-info h3 {
+            font-size: 16px;
+            margin-bottom: 4px;
+            color: #0f0f0f;
+            line-height: 1.4;
+        }
+
+        .text-info p {
+            font-size: 14px;
+            color: #606060;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="/" class="logo">YouTube<sup>IN</sup></a>
+        <div class="search-box">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+        </div>
+        <div
+            style="width: 32px; height: 32px; background: #008080; border-radius: 50%; color: white; display: flex; align-items: center; justify-content: center; font-size: 14px;">
+            N</div>
+    </header>
+
+    <div class="video-grid">
+
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/Aze7zTyIRtk" allowfullscreen></iframe>
+            <div class="video-info">
+                <div class="channel-icon" style="background: #e91e63;"></div>
+                <div class="text-info">
+                    <h3>Aura 10/10 - Meesaya Murukku 2</h3>
+                    <p>Saregama Tamil • 42M views</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/CHVNf3r2PJc" allowfullscreen></iframe>
+            <div class="video-info">
+                <div class="channel-icon" style="background: #3f51b5;"></div>
+                <div class="text-info">
+                    <h3>Mehruba Mehruba - Perumazhakkalam</h3>
+                    <p>Sony Music • 12M views</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/kdJtX9Bfspw" allowfullscreen></iframe>
+            <div class="video-info">
+                <div class="channel-icon"></div>
+                <div class="text-info">
+                    <h3>Saroja HD Comedy | Premji | Vaibhav</h3>
+                    <p>Ayngaran Tamil • 97k views</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/M9hbj3phdT8" allowfullscreen></iframe>
+            <div class="video-info">
+                <div class="channel-icon"></div>
+                <div class="text-info">
+                    <h3>South Korea Ep-1 | Vj Siddhu Vlogs</h3>
+                    <p>Vj Siddhu Vlogs • 4.3M views</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/F5mRW0jo-U4" allowfullscreen></iframe>
+            <div class="video-info">
+                <div class="channel-icon"></div>
+                <div class="text-info">
+                    <h3>Django Web Framework Full Course</h3>
+                    <p>Code Academy • 2.1M views</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
